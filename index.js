@@ -26,8 +26,6 @@ function generateRandomNumber(){
 
 // Copies the password pressed to clipboard
 function copyText(password){
-    let temp = password.textContent
-    
-    navigator.clipboard.writeText(temp)
+    navigator.clipboard.writeText(password.textContent)
     alert("Text Copied!")
 }
