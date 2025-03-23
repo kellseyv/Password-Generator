@@ -3,19 +3,19 @@
     <head>
         <link rel="stylesheet" href="./index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <h1 id="header-el">Generate a <span>random password</span></h1>
         <h2>Never use a secure password again</h2>
         <div>
-            <button id="password-btn" onclick="generatePassword()">Generate Password</button>
+            <button id="password-btn" onclick="generatePasswords()">Generate passwords</button>
             <hr class="solid">
         </div>
-        <div class="password">
-            <h3 id="first-password"></h3>
-            <h3 id="second-password"></h3>
+        <div>
+            <p class="password" id="first-password" onclick="copyText(this)"> </p>
+            <p class="password" id="second-password" onclick="copyText(this)"> </p>
         </div>
         <script src="index.js"></script>
     </body>

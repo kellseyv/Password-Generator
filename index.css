@@ -9,34 +9,46 @@ span {
     color: #10B981;
 }
 
-h2 {
-    color: #D5D4D8;
+h1 {
+    width: 275px;
 }
 
-.password {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-    background: #273549;
-    margin-top: 50px;
-    padding: 15px;
+h2 {
+    color: #D5D4D8;
+    font-size: large;
+    font-weight: normal;
 }
 
 hr.solid {
-    border-top: 1px solid #2F3E53;
+    margin-top: 25px;
+    border: 1px solid #2F3E53;
 }
 
 button {
+    font-family: "Karla", sans-serif;;
     color: white;
     font-size: large;
     background: #10B981;
     border: none;
     border-radius: 5px;
-    padding: 20px;
+    padding: 13px 17px; 
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
 button:hover {
     background: #0c6648;
+}
+
+.password {
+    display: inline-block;
+    border-radius: 5px;
+    background: #273549;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding: 15px 0px;
+    width: 200px;
+    color: #55F991;
+    text-align: center;
+    line-height: 0px;
 }
