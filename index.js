@@ -14,6 +14,7 @@ function generatePassword(){
     }
 
     firstPassword.textContent = [password1]
+    secondPassword.textContent = [password1]
     //returnPasswords(password1)
 }
 

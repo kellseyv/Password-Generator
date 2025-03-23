@@ -14,15 +14,16 @@ h2 {
 }
 
 .password {
-    display: inline;
-    border: 50px solid #273549;
+    display: flex;
+    justify-content: space-between;
     border-radius: 5px;
     background: #273549;
+    margin-top: 50px;
+    padding: 15px;
 }
 
 hr.solid {
     border-top: 1px solid #2F3E53;
-    margin-bottom: 50px;
 }
 
 button {
@@ -31,8 +32,9 @@ button {
     background: #10B981;
     border: none;
     border-radius: 5px;
-    margin: 25px;
-    padding: 25px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 button:hover {
