@@ -26,6 +26,10 @@ function generateRandomNumber(){
 
 // Copies the password pressed to clipboard
 function copyText(password){
-    navigator.clipboard.writeText(password.textContent)
-    alert("Text Copied!")
+    if (!password.textContent){
+        navigator.clipboard.writeText(password.textContent)
+        alert("Text Copied!")
+    } else {
+        alert("No password generated yet")
+    }
 }
