@@ -3,20 +3,23 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
 let firstPassword = document.getElementById("first-password")
 let secondPassword = document.getElementById("second-password")
 
+let passwordEls = [firstPassword, secondPassword]
+
 // Generates our random passwords
 function generatePasswords(){
-    let password1 = []
-    let password2 = []
 
-    // Genereates a random password by updating the password arrays with random data from characters
-    for (let i = 0; i < 15; i++) {
-        password1 += characters[generateRandomNumber()]
-        password2 += characters[generateRandomNumber()]
+    // We create a random 15 digit password for each password in the passwordsEls
+    for(el of passwordEls){
+        let generatedPass = ""
+
+        for (let i = 0; i < 15; i++) {
+            generatedPass += characters[generateRandomNumber()]
+        }
+
+        // Update the HTML with generated password
+        el.textContent = generatedPass
     }
 
-    // Updates HTML with new passwords
-    firstPassword.textContent = [password1]
-    secondPassword.textContent = [password2]
 }
 
 // Function to generate generate random number based on the length of characters 
@@ -26,7 +29,7 @@ function generateRandomNumber(){
 
 // Copies the password pressed to clipboard
 function copyText(password){
-    if (!password.textContent){
+    if (password.textContent){
         navigator.clipboard.writeText(password.textContent)
         alert("Text Copied!")
     } else {
